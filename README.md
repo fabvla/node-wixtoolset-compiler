@@ -42,7 +42,7 @@ wixtoolset-compiler light --args="-o C:\WORKAREA\myproject\build\installer\Setup
 ##### Node JS
 
 ```shell
-npm install wixtoolset
+npm install wixtoolset-compiler
 ```
 
 ### Sample Installer
