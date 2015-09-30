@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+
+  <Fragment>
+
+   <DirectoryRef Id="ApplicationProgramsFolder">
+     <Component Id="ApplicationShortcut" Guid="{07D39AAA-CBB2-4F3F-BC22-EC7BBB963FFF}">
+       <Shortcut Id="ApplicationStartMenuShortcut" Name="Your Product" Description="Your product description" Target="[INSTALLDIR]yourprogram.exe" WorkingDirectory="INSTALLDIR" />
+       <RemoveFolder Id="RemoveApplicationProgramsFolder" Directory="ApplicationProgramsFolder" On="uninstall" />
+       <RegistryValue Root="HKCU" Key="Software\YourCompany\YourProduct" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+     </Component>
+   </DirectoryRef>
+   <DirectoryRef Id="DesktopFolder">
+     <Component Id="ApplicationShortcutDesktop" Guid="{07D39AAA-CBB2-4F3F-BC22-EC7BBB963FBF}">
+       <Shortcut Id="ApplicationDesktopShortcut" Name="Your Product" Description="Your product description" Target="[INSTALLDIR]yourprogram.exe" WorkingDirectory="INSTALLDIR" />
+       <RemoveFolder Id="RemoveDesktopFolder" Directory="DesktopFolder" On="uninstall" />
+       <RegistryValue Root="HKCU" Key="Software\YourCompany\YourProduct" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+     </Component>
+   </DirectoryRef>
+
+  </Fragment>
+</Wix>
