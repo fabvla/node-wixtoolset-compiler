@@ -1,0 +1,47 @@
+{
+  "name": "wixtoolset-compiler",
+  "version": "1.0.0",
+  "description": "Node wrapper to compile EXE Installers to MSI",
+  "main": "lib/msiwrapper.js",
+  "bin": {
+    "msiwrapper-compiler": "./lib/msiwrapper"
+  },
+  "homepage": "https://github.com/fabvla/node-msiwrapper-compiler",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabvla/node-msiwrapper-compiler.git"
+  },
+  "author": {
+    "name": "Fabvla S.n.c.",
+    "email": "info@fabvla.com",
+    "url": "http://www.fabvla.com"
+  },
+  "bugs": {
+    "url": "https://github.com/fabvla/node-msiwrapper-compiler/issues"
+  },
+  "licenses": [
+    {
+      "type": "Open Source",
+      "url": "https://github.com/fabvla/node-msiwrapper-compiler/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "readmeFilename": "README.md",
+  "keywords": [
+    "msi",
+    "innosetup",
+    "setup",
+    "windows",
+    "installer",
+    "node",
+    "cli"
+  ],
+  "gitHead": "fc70c6d015771ddf1df6af0bcc655c8c0172fcce",
+  "readme": "# node-msiwrapper-compiler\nNode wrapper to compile EXE Installers to MSI\n\nThis is a simple node wrapper of [MSI Wrapper](http://www.exemsi.com/) compiler: MsiWrapperBatch.exe, and it's inspired by [node-innosetup-compiler](https://github.com/felicienfrancois/node-innosetup-compiler)\n\n### OS Support\n\n##### Windows\n\nWorks natively on windows\n\n##### Linux & Mac OS X\n\nNot supported yet.\n\n### Usage\n\n```shell\nmsiwrapper-compiler --config=myfile.xml\n```\n\n_Note_:\n\nFor creating XML file, simply run the GUI `MsiWrapper.exe` that is located into `C:\\Users\\[YOURUSER]\\AppData\\Roaming\\npm\\node_modules\\msiwrapper-compiler\\bin` or download and install a fresh installation of MsiWrapper from http://www.exemsi.com/.\n\n\n##### Node JS\n\n```shell\nnpm install fabvla/node-msiwrapper-compiler\n```\n\n### Credits\n\nThanks to Jacob Reinholdt for the amazing work on MSI Wrapper.\nThanks also to [felicienfrancois](https://github.com/felicienfrancois/node-innosetup-compiler) for the NodeJS Innosetup compiler.\n",
+  "_id": "msiwrapper-compiler@1.0.0",
+  "_shasum": "73335e6dddf20563857f5e97ce97af53289c2bb2",
+  "_from": "fabvla/node-msiwrapper-compiler",
+  "_resolved": "git://github.com/fabvla/node-msiwrapper-compiler.git#fc70c6d015771ddf1df6af0bcc655c8c0172fcce"
+}
