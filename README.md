@@ -16,7 +16,7 @@ Not supported yet.
 ### Usage
 
 ```shell
-wixtoolset <command> <args>
+wixtoolset-compiler <command> <args>
 ```
 
 for example, this windows script:
