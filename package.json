@@ -1,6 +1,6 @@
 {
   "name": "wixtoolset-compiler",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Node wrapper for WiX Toolset, for compiling MSI setup files using WXS files",
   "main": "lib/wixtoolset.js",
   "bin": {
